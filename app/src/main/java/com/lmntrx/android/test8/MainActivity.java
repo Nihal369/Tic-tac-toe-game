@@ -94,6 +94,7 @@ public class MainActivity extends Activity {
     //Play again Logic
     public void playAgain(View view)
     {
+        activePlayer=0;
         LinearLayout playAgainLayout=(LinearLayout)findViewById(R.id.playAgainLayout);
         playAgainLayout.setVisibility(View.INVISIBLE);
         gameIsOver=false;
