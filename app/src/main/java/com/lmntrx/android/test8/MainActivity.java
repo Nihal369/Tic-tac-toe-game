@@ -58,7 +58,7 @@ public class MainActivity extends Activity {
                         }
                         else
                         {
-                            winnerMessage="Y";
+                            winnerMessage="O";
                         }
                         TextView winnerText = (TextView) findViewById(R.id.winnerMessage);
                         winnerText.setText(winnerMessage + " Wins");
@@ -69,6 +69,7 @@ public class MainActivity extends Activity {
                     else
                     {
                         //Draw logic
+                        gameIsOver=true;
                         for(int i:gameState) {
                             if (i == 2) {
                                 gameIsOver = false;
